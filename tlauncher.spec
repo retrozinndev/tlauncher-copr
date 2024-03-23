@@ -28,6 +28,8 @@ TLauncher is a third-party launcher for Minecraft: Java Edition.
 #-- PREP, BUILD & INSTALL -----------------------------------------------------#
 %prep
 %autosetup
+# make install dir
+mkdir -p %{buildroot}%{install_dir}
 
 %build
 # Get jar zip
@@ -42,7 +44,6 @@ rm -rf tl
 
 %install
 # copy jar
-mkdir -p %{buildroot}%{install_dir}
 cp -f %{jar_name} %{buildroot}%{install_dir}
 # copy run script
 cp -f %{runner_sh} %{buildroot}%{install_dir}
