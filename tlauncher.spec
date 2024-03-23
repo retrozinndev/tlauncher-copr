@@ -61,7 +61,7 @@ chmod +x %{install_dir}/%{runner_sh}
 
 #-- CHANGELOG -----------------------------------------------------------------#
 %changelog
-* 1.0.1 - 03/23/2024
-- This patch fixes an issue when renaming the jar file.
-* 1.0.0 - 03/23/2024
-- First release of TLauncher Copr Repo!
+
+
+
+
