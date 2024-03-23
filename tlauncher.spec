@@ -32,14 +32,14 @@ TLauncher is a third-party launcher for Minecraft: Java Edition.
 %build
 # Get jar zip
 wget https://tlauncher.org/jar
-mv jar tl.zip
+mv jar tl
 # Unzip file
-unzip tl.zip
+unzip tl
 # get the jar out of the unzipped dir
 cd tl
 mv *.jar ../tlauncher.jar
 # Remove unused file/dir
-rm -rf tl.zip tl/
+rm -rf tl tl/
 
 
 %install
