@@ -14,7 +14,7 @@ Url: https://tlauncher.org/
 # cd %{srcname}
 # tito build --tgz
 Source0: https://github.com/retrozinndev/%{srcname}/archive/refs/tags/v%{version}.tar.gz
-BuildArch: x86_64
+BuildArch: noarch
 
 #-- APPLICATION DEPENDENCIES ---------------------------------------------------#
 Requires: java-openjdk-latest
@@ -28,8 +28,6 @@ TLauncher is a third-party launcher for Minecraft: Java Edition.
 #-- PREP, BUILD & INSTALL -----------------------------------------------------#
 %prep
 %autosetup
-# make install dir
-mkdir -p %{buildroot}%{install_dir}
 
 %build
 # Get jar zip
@@ -43,6 +41,8 @@ rm -rf tl
 
 
 %install
+# make installation dir
+mkdir -p %{buildroot}%{install_dir}
 # copy jar
 cp -f %{jar_name} %{buildroot}%{install_dir}
 # copy run script
