@@ -34,12 +34,10 @@ TLauncher is a third-party launcher for Minecraft: Java Edition.
 wget https://tlauncher.org/jar
 mv jar tl
 # Unzip file
-unzip tl
-# get the jar out of the unzipped dir
-cd tl
-mv *.jar ../tlauncher.jar
-# Remove unused file/dir
-rm -rf tl tl/
+unzip tl -x *.txt
+mv *.jar tlauncher.jar
+# Remove unused zip
+rm -rf tl
 
 
 %install
@@ -63,5 +61,7 @@ chmod +x %{install_dir}/%{runner_sh}
 
 #-- CHANGELOG -----------------------------------------------------------------#
 %changelog
+* 1.0.1
+- This patch fixes an issue when renaming the jar file.
 * 1.0.0
 - First release of TLauncher Copr Repo!
