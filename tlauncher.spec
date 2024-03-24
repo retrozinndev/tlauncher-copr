@@ -46,12 +46,11 @@ mkdir -p %{buildroot}%{install_dir}
 cp -f %{jar_name} %{buildroot}%{install_dir}
 # copy run script
 cp -f %{runner_sh} %{buildroot}%{install_dir}
-# make binary's symlink in /bin
-mkdir -p %{buildroot}%{_bindir}
-ln -sf {install_dir}/%{runner_sh} %{buildroot}%{_bindir}/tlauncher
 
 
 %post
+# make binary's symlink in /bin
+ln -sf {install_dir}/%{runner_sh} {_bindir}/tlauncher
 # apply exec permission to runner script
 chmod +x %{install_dir}/%{runner_sh} %{_bindir}/%{name}
 
