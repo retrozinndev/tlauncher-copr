@@ -47,8 +47,6 @@ cp -f %{jar_name} %{buildroot}%{install_dir}
 # copy run script
 cp -f %{runner_sh} %{buildroot}%{install_dir}
 
-
-%post
 %post
 # make binary's symlink in /bin
 ln -sf %{install_dir}/%{runner_sh} %{_bindir}/%{name}
