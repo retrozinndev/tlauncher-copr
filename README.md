@@ -3,7 +3,6 @@ An unnoficial TLauncher repo for Fedora Copr. TLauncher is a third-party launche
 Minecraft: Java Edition.
 
 ## Installation
-<b>NOTE: This repo is still not available on copr servers, due to a problem when trying to log into Fedora ID.</b>
 ### Enable this repo in Copr
 - To enable TLauncher Copr in your machine, run:
 ```
