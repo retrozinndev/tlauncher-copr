@@ -1,14 +1,14 @@
-%global srcname tlauncher-copr
 %define install_dir %{_libdir}/tlauncher
 %define jar_name tlauncher.jar
 %define runner_sh tlauncher.sh
+%global srcname tlauncher-copr
 
 Name: tlauncher
 Version: 1.0.2
 Release: 1%{?dist}
 License: Proprietary
 Summary: Third-party launcher for Minecraft: Java Edition.
-Url: https://tlauncher.org/
+Url: https://tlauncher.org/en
 # Sources can be obtained by
 # git clone https://github.com/retrozinndev/%{srcname}.git
 # cd %{srcname}
@@ -41,9 +41,8 @@ rm -rf tl
 
 
 %install
-# make installation dir
-mkdir -p %{buildroot}%{install_dir}
 # copy jar
+mkdir -p %{buildroot}%{install_dir}
 cp -f %{jar_name} %{buildroot}%{install_dir}
 # copy run script
 cp -f %{runner_sh} %{buildroot}%{install_dir}
@@ -58,11 +57,9 @@ chmod +x %{install_dir}/%{runner_sh}
 %files
 %doc README.md
 %license LICENSE
+%{_bindir}/tlauncher
 %{install_dir}/*
 
 #-- CHANGELOG -----------------------------------------------------------------#
 %changelog
-
-
-
 
