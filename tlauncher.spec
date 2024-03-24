@@ -58,7 +58,6 @@ chmod +x %{install_dir}/%{runner_sh} %{_bindir}/%{name}
 %files
 %doc README.md
 %license LICENSE
-%{_bindir}/tlauncher
 %{install_dir}/*
 
 #-- CHANGELOG -----------------------------------------------------------------#
