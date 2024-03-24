@@ -2,7 +2,7 @@
 An unnoficial TLauncher repo for Fedora Copr. TLauncher is a third-party launcher for 
 Minecraft: Java Edition.
 
-[![Copr build status](https://copr.fedorainfracloud.org/coprs/retrozinndev/tlauncher/package/TLauncher/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/retrozinndev/tlauncher/package/TLauncher/)
+[![Copr build status](https://copr.fedorainfracloud.org/coprs/retrozinndev/tlauncher/package/tlauncher/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/retrozinndev/tlauncher/package/tlauncher/)
 [![MIT License](https://img.shields.io/github/license/retrozinndev/tlauncher-copr.svg)](https://opensource.org/license/mit)
 
 ## Note
