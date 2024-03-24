@@ -1,4 +1,4 @@
-%define install_dir %{_libdir}/tlauncher/
+%define install_dir /usr/lib/tlauncher
 %define jar_name tlauncher.jar
 %define runner_sh tlauncher.sh
 %global srcname tlauncher-copr
