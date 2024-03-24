@@ -48,7 +48,7 @@ cp -f %{jar_name} %{buildroot}%{install_dir}
 cp -f %{runner_sh} %{buildroot}%{install_dir}
 # make binary's symlink in /bin
 mkdir -p %{buildroot}%{_bindir}
-ln -sf %{buildroot}%{install_dir}/%{runner_sh} %{buildroot}%{_bindir}/tlauncher
+ln -sf {install_dir}/%{runner_sh} %{buildroot}%{_bindir}/tlauncher
 
 
 %post
