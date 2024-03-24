@@ -17,7 +17,7 @@ Source0: https://github.com/retrozinndev/%{srcname}/archive/refs/tags/v%{version
 BuildArch: noarch
 
 #-- APPLICATION DEPENDENCIES ---------------------------------------------------#
-Requires: java-openjdk-latest
+Requires: java-latest-openjdk
 
 #-- BUILD DEPENDENCIES ---------------------------------------------------------#
 BuildRequires: wget
