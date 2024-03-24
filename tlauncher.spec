@@ -49,10 +49,11 @@ cp -f %{runner_sh} %{buildroot}%{install_dir}
 
 
 %post
+%post
 # make binary's symlink in /bin
-ln -sf {install_dir}/%{runner_sh} {_bindir}/tlauncher
+ln -sf %{install_dir}/%{runner_sh} %{_bindir}/%{name}
 # apply exec permission to runner script
-chmod +x %{install_dir}/%{runner_sh} %{_bindir}/%{name}
+chmod +x %{install_dir}/%{runner_sh}
 
 #-- FILES ---------------------------------------------------------------------#
 %files
