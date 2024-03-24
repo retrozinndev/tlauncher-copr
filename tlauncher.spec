@@ -3,7 +3,7 @@
 %define jar_name tlauncher.jar
 %define runner_sh tlauncher.sh
 
-Name: TLauncher
+Name: tlauncher
 Version: 1.0.2
 Release: 1%{?dist}
 License: Proprietary
