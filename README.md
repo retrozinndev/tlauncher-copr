@@ -9,6 +9,14 @@ Minecraft: Java Edition.
 TLauncher is not made by me, I only made this repo for people to get this software with ease. Credits of the software to [@TLauncher](https://github.com/tlauncher), <br>
 [TL website](https://tlauncher.org/en).
 
+## Updating
+If TLauncher prompts you for an update, please update it with:
+- Open your terminal and run:
+```
+ $ tlauncher-update
+```
+If TLauncher persists asking for an update, then you can click to update TLauncher inside the application itself. If you find any issues updating TL with this script, please describe your problem in [Issues](https://github.com/retrozinndev/tlauncher-copr/issues/new). See what this update script does [here](https://github.com/retrozinndev/tlauncher-copr/blob/main/update.sh).
+
 ## Installation
 ### Enable this repo in Copr
 - To enable TLauncher Copr in your machine, run:
