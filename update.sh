@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 
-echo "[WARNING] Please run this script as sudo, this script changes the jar file inside /usr/lib/tlauncher"
+echo "Please, allow this script to run as sudo, it needs to change the jar file inside /usr/lib/tlauncher"
+
+sudo echo "Running as sudo..."
 
 PREVIOUS_PATH=$(pwd)
 
@@ -15,17 +17,16 @@ mv starter-core-*.jar tlauncher.jar
 echo ""
 
 echo "[INFO] Removing previous version jar file..."
-rm /usr/lib/tlauncher/tlauncher.jar
+sudo rm /usr/lib/tlauncher/tlauncher.jar
 
 echo "[INFO] Installing latest version to /usr/lib/tlauncher..."
-mv tlauncher.jar /usr/lib/tlauncher
+sudo mv tlauncher.jar /usr/lib/tlauncher
 
 echo "[INFO] Cleaning temporary files..."
-rm -rf /tmp/tlauncher-update
+sudo rm -rf /tmp/tlauncher-update
 
 echo ""
 
 cd $PREVIOUS_PATH
 
 echo "Done! If you encounter any issues when running this script, describe your problem at https://github.com/retrozinndev/tlauncher-copr/issues/new"
-
