@@ -1,6 +1,7 @@
 %define install_dir /usr/lib/tlauncher
 %define jar_name tlauncher.jar
 %define runner_sh tlauncher.sh
+%define update_sh update.sh
 %global srcname tlauncher-copr
 
 Name: tlauncher
@@ -46,10 +47,14 @@ mkdir -p %{buildroot}%{install_dir}
 cp -f %{jar_name} %{buildroot}%{install_dir}
 # copy run script
 cp -f %{runner_sh} %{buildroot}%{install_dir}
+# copy update script
+cp -f %{update_sh} %{buildroot}%{install_dir}
 
 %post
-# make binary's symlink in /bin
+# make runner symlink in /bin
 ln -sf %{install_dir}/%{runner_sh} %{_bindir}/%{name}
+# make updater symlink in /bin
+ln -sf %{install_dir}/%{update_sh} %{_bindir}/tlauncher-update
 # apply exec permission to runner script
 chmod +x %{install_dir}/%{runner_sh}
 
