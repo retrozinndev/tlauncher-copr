@@ -7,7 +7,7 @@
 %global srcname tlauncher-copr
 
 Name: tlauncher
-Version: 1.2.0
+Version: 1.2.1
 Release: 1%{?dist}
 License: Proprietary
 Summary: Third-party launcher for Minecraft: Java Edition.
