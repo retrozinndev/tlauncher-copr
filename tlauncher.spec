@@ -71,6 +71,8 @@ chmod +x %{install_dir}/%{runner_sh}
 %doc README.md
 %license LICENSE
 %{install_dir}/*
+%{apps_dir}/tlauncher.desktop
+%{icons_dir}/org-tlauncher-TLauncher.png
 
 #-- CHANGELOG -----------------------------------------------------------------#
 %changelog
