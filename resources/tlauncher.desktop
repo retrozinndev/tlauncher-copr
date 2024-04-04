@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=TLauncher
+GenericName=tlauncher
+Comment=A third-party launcher for Minecraft.
+Icon=org-tlauncher-tlauncher
+Exec=tlauncher
+Actions=UpdateTL;
+Categories=Game;
+StartupWMClass=org-tlauncher-tlauncher-rmo-TLauncher
+
+[Desktop Action UpdateTL]
+Name=Update TLauncher
+Exec=tlauncher-update
+Terminal=true

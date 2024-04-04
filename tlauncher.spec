@@ -2,10 +2,12 @@
 %define jar_name tlauncher.jar
 %define runner_sh tlauncher.sh
 %define update_sh update.sh
+%define apps_dir %{_datadir}/applications
+%define icons_dir %{_datadir}/icons/hicolor/512x512/apps
 %global srcname tlauncher-copr
 
 Name: tlauncher
-Version: 1.1.0
+Version: 1.2.0
 Release: 1%{?dist}
 License: Proprietary
 Summary: Third-party launcher for Minecraft: Java Edition.
@@ -49,6 +51,12 @@ cp -f %{jar_name} %{buildroot}%{install_dir}
 cp -f %{runner_sh} %{buildroot}%{install_dir}
 # copy update script
 cp -f %{update_sh} %{buildroot}%{install_dir}
+# copy desktop launcher
+mkdir -p %{buildroot}%{apps_dir}
+cp -f resources/tlauncher.desktop %{buildroot}%{apps_dir}
+# copy desktop icon
+mkdir -p %{buildroot}%{icons_dir}
+cp -f resources/org-tlauncher-TLauncher.png %{buildroot}%{icons_dir}
 
 %post
 # make runner symlink in /bin
